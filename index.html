@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - drump machine</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Righteous'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+   <body>
+      <div class="container">
+         <div class="display-4">Drump Machine</div>
+         <div id="drum-machine">
+            <div class="row">
+               <div class="col left"></div>
+               <div class="col right">
+                  <!-- Default switch -->
+                  <form>
+                    <div class="form-group">
+                      <label for="label_power">Power</label>
+                      <label class="switch">
+                       <input id="power" type="checkbox" onchange="set_power(this)" checked>
+                       <span class="slider round"></span>
+                     </label>
+                    </div>
+                     
+                    <div class="form-group">
+                        <input id="display" class="form-control output-heading" type="text" readonly disabled>
+                    </div>
+                     
+                    <div class="form-group">
+                      <label for="formControlRange">Volume</label>
+                      <input type="range" id="volume"  min="0" max="100" step="1" class="form-control-range">
+                    </div>
+                     
+                     
+                    <div class="form-group">
+                      <label for="label_heater">Heater Kit</label>
+                      <label class="switch">
+                       <input type="checkbox" id="kit" onchange="setupKit(this)">
+                       <span class="slider round"></span>
+                      </label>
+                      <label for="label_piano">Smooth Piano Kit</label>
+                    </div>
+                     
+                    
+                    
+                  </form>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
